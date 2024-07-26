@@ -51,6 +51,6 @@ createWeb3Modal({
     themeMode: "dark",
 });
 
-export function Web3ModalProvider({ children }: { children: React.ReactNode }) {
+export function Web3ModalProvider({ children }: {children: any}) {
     return children;
 }
