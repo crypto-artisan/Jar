@@ -1,0 +1,1 @@
+# Jar Next.js Frontend
