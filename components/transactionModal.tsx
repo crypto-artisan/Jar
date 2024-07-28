@@ -38,7 +38,7 @@ const TransactionModal: React.FC<ITransactionModal> = ({ isOpen, modalPlacement,
                         </ModalHeader>
                         <ModalBody>
                             <div className="flex flex-col gap-4 overflow-y-auto h-[380px]">
-                                <section className="flex flex-col gap-2 w-4/5">
+                                <section className="flex flex-col gap-2">
                                     <h4>{transaction?.date}</h4>
                                     <h4>Jar Name: {transaction?.name}</h4>
                                     <h4>Sent to {transaction?.address}</h4>

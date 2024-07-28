@@ -16,13 +16,11 @@ interface ITransactionModal {
 const CreateModal: React.FC<ITransactionModal> = ({ isOpen, modalPlacement, onClose, onOpenChange }) => {
 
     const [tab, setTab] = useState<string>('create');
-    // const [tab, setTab] = useState<string>('review');
 
     const [value, setValue] = React.useState("1");
 
     const handleSelectionChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setValue(e.target.value);
-        console.log("=>>>>change event", e.target.value);
     };
 
     useEffect(() => {
@@ -89,7 +87,7 @@ const CreateModal: React.FC<ITransactionModal> = ({ isOpen, modalPlacement, onCl
                                                     type="input"
                                                 />
                                             </section>
-                                            <section className="flex flex-col gap-2 w-1/2">
+                                            <section className="flex flex-col gap-2 w-2/3 md:w-1/2">
                                                 <h4>Sender’s Telegram ID</h4>
                                                 <Input
                                                     classNames={{
@@ -101,7 +99,7 @@ const CreateModal: React.FC<ITransactionModal> = ({ isOpen, modalPlacement, onCl
                                                     type="input"
                                                 />
                                             </section>
-                                            <section className="flex flex-col gap-2 w-1/2">
+                                            <section className="flex flex-col gap-2 w-2/3 md:w-1/2">
                                                 <h4>Recipient’s Telegram ID</h4>
                                                 <Input
                                                     classNames={{
@@ -113,7 +111,7 @@ const CreateModal: React.FC<ITransactionModal> = ({ isOpen, modalPlacement, onCl
                                                     type="input"
                                                 />
                                             </section>
-                                            <section className="flex flex-col gap-2 w-1/2">
+                                            <section className="flex flex-col gap-2 w-2/3 md:w-1/2">
                                                 <h4>Total Amount of Assets</h4>
                                                 <Input
                                                     classNames={{
