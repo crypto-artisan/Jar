@@ -25,7 +25,7 @@ export const CheckIcon: React.FC<IconSvgProps> = ({
 );
 
 export const PlusIcon: React.FC<IconSvgProps> = ({
-  size = 40,
+  size = 24,
   width,
   height,
   ...props

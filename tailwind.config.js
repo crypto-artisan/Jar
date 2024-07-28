@@ -17,6 +17,10 @@ module.exports = {
         'theme': '#8259EF',
         'card-dark': '#0D0621'
       },
+      backgroundImage: {
+        'landing': "url('/background/landing.png')",
+        'transfer': "url('/background/transfer.png')"
+      },
       textColor: {
         'theme': '#8259EF',
       },

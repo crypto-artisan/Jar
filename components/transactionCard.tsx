@@ -11,7 +11,7 @@ const TransactionCard = ({ transaction }: { transaction: ITransaction }) => {
     const [modalPlacement, setModalPlacement] = React.useState("auto");
 
     return (
-        <div onClick={onOpen} className="p-4 rounded-xl border-2 border-[#8259EF2f] cursor-pointer">
+        <div onClick={onOpen} className="Outline-Card p-4 cursor-pointer">
             <div className="flex flex-row items-center justify-between">
                 <h3>{transaction?.id}</h3>
                 <p className="text-right">

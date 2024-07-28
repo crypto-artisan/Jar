@@ -2,7 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
 body {
+    font-family: 'SF Pro Display', 'Roboto';
     background-image: linear-gradient(180deg, #0D0924 0%, #210F3D 100%);
     background-size: cover;
     color: #ffffff;
@@ -41,6 +45,8 @@ input {
 
 .customInput {
     border: 1px solid white;
+    transition: all !important;
+    transition-duration: 1s !important;
     background-color: transparent !important;
 }
 
@@ -50,6 +56,44 @@ input {
 
 .customInput:focus {
     background-color: transparent !important;
+}
+
+.searchInput {
+    transition: all !important;
+    transition-duration: 1s !important;
+    background-color: transparent !important;
+}
+
+.searchInput:hover {
+    background-color: transparent !important;
+}
+
+.searchInput:focus {
+    background-color: transparent !important;
+}
+
+.modal-container {
+    background-image: radial-gradient(circle, #1D0941 2%, #8259EF 51%, #ffffff 100%);
+    padding: 1px;
+}
+
+.Outline-Card {
+    position: relative;
+}
+
+.Outline-Card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    padding: 1px;
+    background: radial-gradient(circle, #1D0941 2%, #8259EF 51%, #ffffff 100%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
 }
 
 .dash-animation {

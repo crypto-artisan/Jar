@@ -15,7 +15,7 @@ const tabs = [
 export default function TabBar() {
     const [tab, setTab] = useState<string>('transfer');
     return (
-        <div className="grid grid-cols-2 w-full">
+        <div className="fixed grid grid-cols-2 w-full h-[60px]">
             {
                 tabs.map((item, index) => (
                     <div onClick={() => setTab(item.value)} key={index}>

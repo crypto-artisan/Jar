@@ -37,7 +37,7 @@ const CreateModal: React.FC<ITransactionModal> = ({ isOpen, modalPlacement, onCl
             classNames={{
                 body: "p-4",
                 backdrop: "bg-[#292f46]/50 backdrop-opacity-40",
-                base: "border-[#292f46] bg-[#19172c] px-2 md:px-4",
+                base: "Outline-Card bg-[#19172c] px-2 md:px-4",
                 header: "border-none",
                 footer: "border-none",
                 closeButton: "hover:bg-white/5 active:bg-white/10",
@@ -49,12 +49,12 @@ const CreateModal: React.FC<ITransactionModal> = ({ isOpen, modalPlacement, onCl
                         <ModalHeader className="w-full flex flex-col items-center justify-between pt-12 gap-4">
                             <h3>Create, Invite and Pay Assets</h3>
                             <div className="w-full flex flex-row md:px-12">
-                                < button className={`w-[45%] flex flex-row items-center justify-between gap-1 px-4 py-1 bg-[#292f46] border-1 border-theme rounded-xl shadow-theme`} >
+                                < button className={`w-[45%] flex flex-row items-center justify-center gap-1 px-4 py-1 bg-[#292f46] border-1 border-theme rounded-xl shadow-theme`} >
                                     <h4 className="flex items-center justify-center rounded-full border-1 border-theme w-[24px] h-[24px]">1</h4>
                                     Create
                                 </button >
                                 <div className="border-b-1 border-white h-1 self-center w-[10%]" />
-                                < button className={`w-[45%] flex flex-row items-center justify-between gap-1 px-4 py-1 bg-[#292f46] rounded-xl ${tab == 'review' && 'border-1 border-theme shadow-theme'}`} >
+                                < button className={`w-[45%] flex flex-row items-center justify-center gap-1 px-4 py-1 bg-[#292f46] rounded-xl ${tab == 'review' && 'border-1 border-theme shadow-theme'}`} >
                                     <h4 className="flex items-center justify-center rounded-full border-1 border-theme w-[24px] h-[24px]">2</h4>
                                     Review
                                 </button >
