@@ -28,21 +28,21 @@ export default function AcceptPage() {
               <section className="flex flex-col gap-2 md:gap-4 overflow-y-auto">
                 <section className="flex flex-col text-left gap-2">
                   <h4>Name of your Jar</h4>
-                  <div className="flex flex-row items-center justify-between px-2 py-1 rounded-md border-1 bg-[#292f46] border-[#D9D9D9] cursor-pointer">
+                  <div className="flex flex-row items-center justify-between px-2 py-1 rounded-md border-1 bg-[#292f46] border-[#D9D9D950] cursor-pointer">
                     <h5 className="text-[10px] md:text-[12px]">{exampleJoinData[0].name}</h5>
                   </div>
                 </section>
 
                 <section className="flex flex-col text-left gap-2">
                   <h4>Sender’s address</h4>
-                  <div className="flex flex-row items-center justify-between px-2 py-1 rounded-md border-1 bg-[#292f46] border-[#D9D9D9] cursor-pointer">
+                  <div className="flex flex-row items-center justify-between px-2 py-1 rounded-md border-1 bg-[#292f46] border-[#D9D9D950] cursor-pointer">
                     <h5 className="text-[10px] md:text-[12px]">{exampleJoinData[0].sender}</h5>
                   </div>
                 </section>
 
                 <section className="flex flex-col text-left gap-2">
                   <h4>Recipient’s address</h4>
-                  <div className="flex flex-row items-center justify-between px-2 py-1 rounded-md border-1 bg-[#292f46] border-[#D9D9D9] cursor-pointer">
+                  <div className="flex flex-row items-center justify-between px-2 py-1 rounded-md border-1 bg-[#292f46] border-[#D9D9D950] cursor-pointer">
                     <h5 className="text-[10px] md:text-[12px]">{exampleJoinData[0].recipient}</h5>
                   </div>
                 </section>
@@ -52,7 +52,7 @@ export default function AcceptPage() {
 
                   {
                     exampleJoinData[0].reviews.map((reviewer, index) => (
-                      <div key={index} className="flex flex-row items-center justify-between px-2 py-1 rounded-md border-1 bg-[#292f46] border-[#D9D9D9] cursor-pointer">
+                      <div key={index} className="flex flex-row items-center justify-between px-2 py-1 rounded-md border-1 bg-[#292f46] border-[#D9D9D950] cursor-pointer">
                         <h5 className="text-[10px] md:text-[12px]">{reviewer}</h5>
                       </div>
                     ))
