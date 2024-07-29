@@ -95,7 +95,7 @@ const CreateModal: React.FC<ITransactionModal> = ({ isOpen, modalPlacement, onCl
                                                         input: "text-[12px] text-white",
                                                     }}
                                                     labelPlacement="outside"
-                                                    placeholder="@"
+                                                    placeholder=""
                                                     type="input"
                                                 />
                                             </section>
@@ -107,7 +107,7 @@ const CreateModal: React.FC<ITransactionModal> = ({ isOpen, modalPlacement, onCl
                                                         input: "text-[12px] text-white",
                                                     }}
                                                     labelPlacement="outside"
-                                                    placeholder="@"
+                                                    placeholder=""
                                                     type="input"
                                                 />
                                             </section>
@@ -211,7 +211,7 @@ const CreateModal: React.FC<ITransactionModal> = ({ isOpen, modalPlacement, onCl
                                                         input: "text-[12px] text-white",
                                                     }}
                                                     labelPlacement="outside"
-                                                    placeholder="@"
+                                                    placeholder=""
                                                     type="input"
                                                 />
                                             </section>
@@ -235,7 +235,7 @@ const CreateModal: React.FC<ITransactionModal> = ({ isOpen, modalPlacement, onCl
                                                         input: "text-[12px] text-white",
                                                     }}
                                                     labelPlacement="outside"
-                                                    placeholder="@"
+                                                    placeholder=""
                                                     type="input"
                                                 />
                                             </section>
