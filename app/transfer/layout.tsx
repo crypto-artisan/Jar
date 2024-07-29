@@ -25,7 +25,7 @@ export default function TransferLayout({
       < button onClick={onOpen} className="hidden md:flex absolute bottom-[200px] right-1/2 md:translate-x-[360px] lg:translate-x-[500px] px-10 py-3 bg-theme rounded-xl" >
         + Create
       </button >
-      <Button onClick={onOpen} isIconOnly color="bg-[#23094F]" className="flex md:hidden absolute bottom-[150px] right-[10px] w-[50px] h-[50px] border-1 border-theme bg-[#23094F] rounded-full">
+      <Button onClick={onOpen} isIconOnly color="bg-[#23094F]" className="flex md:hidden absolute bottom-[200px] right-[10px] w-[50px] h-[50px] border-1 border-theme bg-[#23094F] rounded-full">
         <PlusIcon />
       </Button>
       <CreateModal isOpen={isOpen} modalPlacement={modalPlacement} onClose={onClose} onOpenChange={onOpenChange} />
