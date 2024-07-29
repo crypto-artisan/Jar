@@ -31,6 +31,9 @@ module.exports = {
       boxShadow: {
         'theme': '0px 0px 12px 1px rgba(130, 89, 239, 0.57)',
       },
+      fontFamily: {
+        sfpro: ['sfpro', 'sans-serif'],
+      },
     },
   },
   darkMode: "class",

@@ -48,7 +48,7 @@ export default function RootLayout({
       <head />
       <body
         className={clsx(
-          `h-screen overflow-hidden`,
+          `h-screen overflow-hidden font-sfpro`,
           backgroundClassName
         )}
       >
