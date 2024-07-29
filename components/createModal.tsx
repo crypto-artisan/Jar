@@ -148,7 +148,7 @@ const CreateModal: React.FC<ITransactionModal> = ({ isOpen, modalPlacement, onCl
                                                     onChange={handleSelectionChange}
                                                     classNames={{
                                                         label: "group-data-[filled=true]:-translate-y-5",
-                                                        trigger: "min-h-8",
+                                                        trigger: "min-h-8 data-[focus=true]:border-white data-[open=true]:border-white border-small",
                                                         listboxWrapper: "max-h-[200px]",
                                                     }}
                                                     listboxProps={{
@@ -162,7 +162,10 @@ const CreateModal: React.FC<ITransactionModal> = ({ isOpen, modalPlacement, onCl
                                                                 "dark:data-[hover=true]:bg-default-50",
                                                                 "data-[selectable=true]:focus:bg-default-50",
                                                                 "data-[pressed=true]:opacity-70",
-                                                                "data-[focus-visible=true]:ring-default-500",
+                                                                "data-[pressed=true]:border-white",
+                                                                "data-[focus-visible=true]:border-white",
+                                                                "focus:border:white",
+
                                                             ],
                                                         },
                                                     }}
@@ -179,6 +182,13 @@ const CreateModal: React.FC<ITransactionModal> = ({ isOpen, modalPlacement, onCl
                                                         </SelectItem>
                                                     ))}
                                                 </Select>
+                                                {/* <select className="customSelect p-3 text-[12px] text-white rounded-xl bg-transparent w-[100px]">
+                                                    {reviewerOptions.map((option, index) => (
+                                                        <option key={index} className="bg-transparent text-white">
+                                                            {option.label}
+                                                        </option>
+                                                    ))}
+                                                </select> */}
                                             </section>
 
                                             <section className="flex flex-col gap-2">

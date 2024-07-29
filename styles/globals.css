@@ -87,7 +87,9 @@ input {
     padding: 1px;
 }
 
-
+.customSelect {
+    border: 1px white solid;
+}
 
 .customModal {
     background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.7) 100%), linear-gradient(45deg, #23094FE0 0%, #23094FE0 100%);
