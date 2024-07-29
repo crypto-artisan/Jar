@@ -12,10 +12,12 @@ const TransactionCard = ({ transaction }: { transaction: ITransaction }) => {
 
     return (
         <div onClick={onOpen} className="Outline-Card p-4 cursor-pointer">
-            <div className="flex flex-row items-center justify-between">
-                <h3>{transaction?.id}</h3>
-                <p className="text-right">
+            <div className="flex flex-col w-full items-center justify-between">
+                <div className="flex flex-row w-full items-center justify-between">
+                    <h3>{transaction?.id}</h3>
                     Jar Name:{transaction?.name}<br />
+                </div>
+                <p className="w-full text-right">
                     {transaction?.date}
                 </p>
             </div>
