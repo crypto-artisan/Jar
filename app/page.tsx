@@ -15,12 +15,16 @@ export default function Home() {
       router.push('/transfer');
     }
   }, [isConnected, router])
-
+  const gradientStyle = {
+    background: '-webkit-linear-gradient(30deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0.6) 100%)',
+    WebkitBackgroundClip: 'text',
+    WebkitTextFillColor: 'transparent',
+  };
   return (
     <section className="flex flex-col h-full items-center justify-between pt-16 pb-32">
-      <div className="flex flex-col w-full md:w-[500px] px-4">
-        <h3 className="text-left">Welcome to Jar</h3>
-        <h1 className="text-left">Your Assets,</h1>
+      <div className="flex flex-col text-left w-full md:w-[500px] text-gradient">
+        <h2 className="text-[32px]">Welcome to Jar</h2>
+        <h1>Your Assets,</h1>
         <h1 className="text-right">Our Security.</h1>
       </div>
       <Image src="/logo.svg" alt="logo-svg" width={200} height={200} className="w-[100px] h-[100px] md:w-[200px] md:h-[200px]" />

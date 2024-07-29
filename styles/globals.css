@@ -13,8 +13,7 @@ body {
 }
 
 h1,
-h2,
-h3 {
+h2 {
     font-weight: bolder;
 }
 
@@ -27,20 +26,31 @@ h2 {
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 h4 {
-    font-size: 16px;
+    font-size: 14px;
+}
+
+h5 {
+    font-size: 10px;
+}
+
+.text-gradient {
+    background: -webkit-linear-gradient(15deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0.6) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 nav {
-    background-color: initial !important;
+    background-color: transparent !important;
     padding: 10px 0 !important;
 }
 
 input {
     color: #fff !important;
+    font-size: 10px;
 }
 
 .customInput {
@@ -79,6 +89,8 @@ input {
 
 .Outline-Card {
     position: relative;
+    border: 1px solid transparent;
+    border-radius: 16px;
 }
 
 .Outline-Card::before {
@@ -87,13 +99,15 @@ input {
     inset: 0;
     border-radius: 16px;
     padding: 1px;
-    background: radial-gradient(circle, #1D0941 2%, #8259EF 51%, #ffffff 100%);
+    background: radial-gradient(circle, rgba(29, 9, 65, 1) 2%, rgba(130, 89, 239, 0.7) 51%, rgba(255, 255, 255, 1) 100%), linear-gradient(10deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.1) 100%);
     -webkit-mask:
         linear-gradient(#fff 0 0) content-box,
         linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
     pointer-events: none;
+    background-position: 100%;
+    /* background-size: 40% 100%; */
 }
 
 .dash-animation {

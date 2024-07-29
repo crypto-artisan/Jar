@@ -7,49 +7,43 @@ export default function AcceptPage() {
   const [tab, setTab] = useState<string>('sign');
 
   return (
-    <div className="flex flex-col w-full h-full items-center justify-center gap-8">
-      <div className="w-full h-[75vh] md:h-[70vh] overflow-y-auto px-4">
+    <div className="flex flex-col w-full h-full items-center justify-start md:justify-center gap-2 md:gap-8">
+      <div className="flex flex-col items-center w-full h-[80vh] md:h-[70vh] overflow-y-auto px-8">
+        <h2 className="text-gradient">
+          Click, Join and<br /> Get Assets
+        </h2>
         {
-          tab == 'sign' && (
-            <div className="flex flex-col gap-4 md:gap-32">
-              <h2>
-                Click, Join and<br />
-                Get Assets
+          tab == 'sign' ? (
+            <div onClick={() => setTab('accept')} className="Outline-Card flex items-center justify-center bg-[#210F3D] h-[300px] md:w-[500px] p-4 px-6 my-16 rounded-[16px] cursor-pointer">
+              <h2 className="text-gradient">
+                Please hold on until the
+                recipient joins the jar.
               </h2>
-              <div onClick={() => setTab('accept')} className="Outline-Card flex items-center justify-center bg-[#210F3D] h-[300px] md:w-[500px] mx-8 p-4 md:mx-auto rounded-xl cursor-pointer">
-                <h2>
-                  Please hold on until the
-                  recipient joins the jar.
-                </h2>
-              </div>
             </div>
-          )
-        }
-        {
-          tab == 'accept' && (
-            <div className="Outline-Card bg-[#19172c] p-4 md:w-[500px] mx-auto space-y-4 rounded-[10px]">
+          ) : (
+            <div className="Outline-Card bg-[#19172c] p-4 px-6 md:w-[500px] mx-auto space-y-4 rounded-[16px]">
               <header className="flex flex-row items-center justify-start border-0">
                 <h3>{exampleJoinData[0].id}</h3>
               </header>
               <section className="flex flex-col gap-2 overflow-y-auto">
                 <section className="flex flex-col text-left gap-2">
                   <h4>Name of your Jar</h4>
-                  <div className="flex flex-row items-center justify-between px-2 py-1 rounded-xl border-2 bg-[#292f46] border-[#8259EF2f] cursor-pointer">
-                    <h4>{exampleJoinData[0].name}</h4>
+                  <div className="flex flex-row items-center justify-between px-2 py-1 rounded-md border-1 bg-[#292f46] border-[#D9D9D9] cursor-pointer">
+                    <h5>{exampleJoinData[0].name}</h5>
                   </div>
                 </section>
 
                 <section className="flex flex-col text-left gap-2">
                   <h4>Sender’s address</h4>
-                  <div className="flex flex-row items-center justify-between px-2 py-1 rounded-xl border-2 bg-[#292f46] border-[#8259EF2f] cursor-pointer">
-                    <h4>{exampleJoinData[0].sender}</h4>
+                  <div className="flex flex-row items-center justify-between px-2 py-1 rounded-md border-1 bg-[#292f46] border-[#D9D9D9] cursor-pointer">
+                    <h5>{exampleJoinData[0].sender}</h5>
                   </div>
                 </section>
 
                 <section className="flex flex-col text-left gap-2">
                   <h4>Recipient’s address</h4>
-                  <div className="flex flex-row items-center justify-between px-2 py-1 rounded-xl border-2 bg-[#292f46] border-[#8259EF2f] cursor-pointer">
-                    <h4>{exampleJoinData[0].recipient}</h4>
+                  <div className="flex flex-row items-center justify-between px-2 py-1 rounded-md border-1 bg-[#292f46] border-[#D9D9D9] cursor-pointer">
+                    <h5>{exampleJoinData[0].recipient}</h5>
                   </div>
                 </section>
 
@@ -58,31 +52,31 @@ export default function AcceptPage() {
 
                   {
                     exampleJoinData[0].reviews.map((reviewer, index) => (
-                      <div key={index} className="flex flex-row items-center justify-between px-2 py-1 rounded-xl border-2 bg-[#292f46] border-[#8259EF2f] cursor-pointer">
-                        <h4>{reviewer}</h4>
+                      <div key={index} className="flex flex-row items-center justify-between px-2 py-1 rounded-md border-1 bg-[#292f46] border-[#D9D9D9] cursor-pointer">
+                        <h5>{reviewer}</h5>
                       </div>
                     ))
                   }
                 </section>
 
               </section>
-              <footer className="flex flex-row items-center justify-between pt-4 border-t-1 border-theme">
+              <footer className="flex flex-row items-center justify-between pt-4 border-t-1 border-[#292f46]">
                 <h3>Total Assets:</h3>
                 <h3>{exampleJoinData[0].totalAssets} HBAR</h3>
               </footer>
-            </div>
+            </div >
           )
         }
-      </div>
+      </div >
       {
         tab == 'accept' && (
-          <div className="w-full md:w-[500px] px-4 md:px-0">
-            < button onClick={() => setTab('sign')} className="w-full px-4 py-2 bg-theme rounded-xl" >
+          <div className="w-full md:w-[500px] px-12">
+            < button onClick={() => setTab('sign')} className="w-full px-4 py-2 bg-theme rounded-[16px]" >
               Deposit Assets
             </button >
           </div>
         )
       }
-    </div>
+    </div >
   );
 }

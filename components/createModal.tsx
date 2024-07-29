@@ -68,7 +68,7 @@ const CreateModal: React.FC<ITransactionModal> = ({ isOpen, modalPlacement, onCl
                                                 <Input
                                                     classNames={{
                                                         inputWrapper: "customInput",
-                                                        input: "text-md text-white",
+                                                        input: "text-[12px] text-white",
                                                     }}
                                                     labelPlacement="outside"
                                                     placeholder="Name your jar"
@@ -80,7 +80,7 @@ const CreateModal: React.FC<ITransactionModal> = ({ isOpen, modalPlacement, onCl
                                                 <Input
                                                     classNames={{
                                                         inputWrapper: "customInput",
-                                                        input: "text-md text-white",
+                                                        input: "text-[12px] text-white",
                                                     }}
                                                     labelPlacement="outside"
                                                     placeholder="0x4DfB2F6d16A8CB217b391ce2A731433d769Ef859"
@@ -92,7 +92,7 @@ const CreateModal: React.FC<ITransactionModal> = ({ isOpen, modalPlacement, onCl
                                                 <Input
                                                     classNames={{
                                                         inputWrapper: "customInput",
-                                                        input: "text-md text-white",
+                                                        input: "text-[12px] text-white",
                                                     }}
                                                     labelPlacement="outside"
                                                     placeholder="@abc123"
@@ -104,7 +104,7 @@ const CreateModal: React.FC<ITransactionModal> = ({ isOpen, modalPlacement, onCl
                                                 <Input
                                                     classNames={{
                                                         inputWrapper: "customInput",
-                                                        input: "text-md text-white",
+                                                        input: "text-[12px] text-white",
                                                     }}
                                                     labelPlacement="outside"
                                                     placeholder="@abc123"
@@ -116,7 +116,7 @@ const CreateModal: React.FC<ITransactionModal> = ({ isOpen, modalPlacement, onCl
                                                 <Input
                                                     classNames={{
                                                         inputWrapper: "customInput",
-                                                        input: "text-md text-white",
+                                                        input: "text-[12px] text-white",
                                                     }}
                                                     labelPlacement="outside"
                                                     placeholder="900"
@@ -186,7 +186,7 @@ const CreateModal: React.FC<ITransactionModal> = ({ isOpen, modalPlacement, onCl
                                                 <Input
                                                     classNames={{
                                                         inputWrapper: "customInput",
-                                                        input: "text-md text-white",
+                                                        input: "text-[12px] text-white",
                                                     }}
                                                     labelPlacement="outside"
                                                     placeholder="0x4DfB2F6d16A8CB217b391ce2A731433d769Ef859"
@@ -198,7 +198,7 @@ const CreateModal: React.FC<ITransactionModal> = ({ isOpen, modalPlacement, onCl
                                                 <Input
                                                     classNames={{
                                                         inputWrapper: "customInput",
-                                                        input: "text-md text-white",
+                                                        input: "text-[12px] text-white",
                                                     }}
                                                     labelPlacement="outside"
                                                     placeholder="@abc123"
@@ -210,7 +210,7 @@ const CreateModal: React.FC<ITransactionModal> = ({ isOpen, modalPlacement, onCl
                                                 <Input
                                                     classNames={{
                                                         inputWrapper: "customInput",
-                                                        input: "text-md text-white",
+                                                        input: "text-[12px] text-white",
                                                     }}
                                                     labelPlacement="outside"
                                                     placeholder="0x4DfB2F6d16A8CB217b391ce2A731433d769Ef859"
@@ -222,7 +222,7 @@ const CreateModal: React.FC<ITransactionModal> = ({ isOpen, modalPlacement, onCl
                                                 <Input
                                                     classNames={{
                                                         inputWrapper: "customInput",
-                                                        input: "text-md text-white",
+                                                        input: "text-[12px] text-white",
                                                     }}
                                                     labelPlacement="outside"
                                                     placeholder="@abc123"

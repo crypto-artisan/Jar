@@ -42,20 +42,11 @@ export const Navbar = () => {
   );
 
   return (
-    <div className="fixed w-full items-center z-[10]">
-      <NextUINavbar maxWidth="xl" position="sticky">
-        <NavbarContent
-          className="w-full"
-          justify="end"
-        >
-          <div className="flex flex-row items-center justify-between w-1/2 mr-[20px] md:mr-[30px]">
-            <Image src="/logo.svg" alt="logo-svg" width={50} height={50} className="w-[40px] h-[40px] md:w-[50px] md:h-[50px]" />
-            <NavbarItem>
-              {searchInput}
-            </NavbarItem>
-          </div>
-        </NavbarContent>
-      </NextUINavbar>
+    <div className='fixed flex flex-row w-full items-center justify-center bg-transparent py-2'>
+      <Image src="/logo.svg" alt="logo-svg" width={50} height={50} className="w-[40px] h-[40px] md:w-[50px] md:h-[50px]" />
+      <div className={`absolute md:right-64 ${isSearchActive ? 'right-4' : 'right-8'}`}>
+        {searchInput}
+      </div>
     </div>
   );
 };
