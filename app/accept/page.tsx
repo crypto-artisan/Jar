@@ -21,29 +21,29 @@ export default function AcceptPage() {
               </h2>
             </div>
           ) : (
-            <div className="Outline-Card bg-[#19172c] p-4 px-6 md:w-[500px] mx-auto space-y-4 rounded-[16px]">
+            <div className="customModal md:py-10 py-4 px-6 md:w-[400px] mx-auto space-y-4 rounded-[16px]">
               <header className="flex flex-row items-center justify-start border-0">
                 <h3>{exampleJoinData[0].id}</h3>
               </header>
-              <section className="flex flex-col gap-2 overflow-y-auto">
+              <section className="flex flex-col gap-2 md:gap-4 overflow-y-auto">
                 <section className="flex flex-col text-left gap-2">
                   <h4>Name of your Jar</h4>
                   <div className="flex flex-row items-center justify-between px-2 py-1 rounded-md border-1 bg-[#292f46] border-[#D9D9D9] cursor-pointer">
-                    <h5>{exampleJoinData[0].name}</h5>
+                    <h5 className="text-[10px] md:text-[12px]">{exampleJoinData[0].name}</h5>
                   </div>
                 </section>
 
                 <section className="flex flex-col text-left gap-2">
                   <h4>Sender’s address</h4>
                   <div className="flex flex-row items-center justify-between px-2 py-1 rounded-md border-1 bg-[#292f46] border-[#D9D9D9] cursor-pointer">
-                    <h5>{exampleJoinData[0].sender}</h5>
+                    <h5 className="text-[10px] md:text-[12px]">{exampleJoinData[0].sender}</h5>
                   </div>
                 </section>
 
                 <section className="flex flex-col text-left gap-2">
                   <h4>Recipient’s address</h4>
                   <div className="flex flex-row items-center justify-between px-2 py-1 rounded-md border-1 bg-[#292f46] border-[#D9D9D9] cursor-pointer">
-                    <h5>{exampleJoinData[0].recipient}</h5>
+                    <h5 className="text-[10px] md:text-[12px]">{exampleJoinData[0].recipient}</h5>
                   </div>
                 </section>
 
@@ -53,7 +53,7 @@ export default function AcceptPage() {
                   {
                     exampleJoinData[0].reviews.map((reviewer, index) => (
                       <div key={index} className="flex flex-row items-center justify-between px-2 py-1 rounded-md border-1 bg-[#292f46] border-[#D9D9D9] cursor-pointer">
-                        <h5>{reviewer}</h5>
+                        <h5 className="text-[10px] md:text-[12px]">{reviewer}</h5>
                       </div>
                     ))
                   }
