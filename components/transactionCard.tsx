@@ -22,7 +22,7 @@ const TransactionCard = ({ transaction }: { transaction: ITransaction }) => {
                 </p>
             </div>
             <div className="flex flex-row items-center justify-between">
-                < button className="px-4 py-2 bg-theme rounded-xl" >
+                < button className="px-4 py-2 bg-theme rounded-xl w-[120px]" >
                     {transaction?.result}
                 </button >
                 <h3>{transaction?.value} HBAR</h3>
