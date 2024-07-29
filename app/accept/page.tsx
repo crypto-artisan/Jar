@@ -70,7 +70,7 @@ export default function AcceptPage() {
       </div >
       {
         tab == 'accept' && (
-          <div className="w-full md:w-[400px] px-12">
+          <div className="w-full md:w-[400px] px-14 mb-16 md:mb-0">
             < button onClick={() => setTab('sign')} className="w-full px-4 py-2 bg-theme rounded-[16px] text-[24px]" >
               Deposit Assets
             </button >

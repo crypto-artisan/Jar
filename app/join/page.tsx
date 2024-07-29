@@ -74,7 +74,7 @@ export default function JoinPage() {
       </div>
       {
         tab == 'join' && (
-          <div className="w-full md:w-[400px] px-12">
+          <div className="w-full md:w-[400px] px-14 md:px-12 mb-16 md:mb-0">
             < button onClick={() => setTab('sign')} className="w-full px-4 py-2 bg-theme rounded-[16px] text-[24px]" >
               Click to Join
             </button >
@@ -83,7 +83,7 @@ export default function JoinPage() {
       }
       {
         tab == 'sign' && (
-          <div className="w-full md:w-[400px] md:px-0 grid grid-cols-2 px-12 space-x-2">
+          <div className="w-full md:w-[400px] md:px-0 grid grid-cols-2 px-14 space-x-2 mb-16 md:mb-0">
             < button className="px-4 py-2 bg-theme rounded-[16px] text-[24px]" >
               Sign
             </button >

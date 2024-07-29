@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=SF-Pro:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
 body {
-    font-family: 'SF Pro Display', 'Roboto';
+    font-family: 'SF-Pro';
     background-image: linear-gradient(180deg, #0D0924 0%, #210F3D 100%);
     background-size: cover;
     color: #ffffff;
