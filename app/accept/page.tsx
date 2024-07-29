@@ -9,16 +9,16 @@ export default function AcceptPage() {
   return (
     <div className="flex flex-col w-full h-full items-center justify-start md:justify-center gap-2 md:gap-8">
       <div className="flex flex-col items-center w-full h-[80vh] md:h-[70vh] overflow-y-auto px-8">
-        <h2 className="text-gradient">
+        <p className="text-[48px] text-gradient leading-10 pb-6">
           Click, Join and<br /> Get Assets
-        </h2>
+        </p>
         {
           tab == 'sign' ? (
             <div onClick={() => setTab('accept')} className="Outline-Card flex items-center justify-center bg-[#210F3D] h-[300px] md:w-[500px] p-4 px-6 my-16 rounded-[16px] cursor-pointer">
-              <h2 className="text-gradient">
+              <h1 className="text-gradient text-[48px]">
                 Please hold on until the
                 recipient joins the jar.
-              </h2>
+              </h1>
             </div>
           ) : (
             <div className="customModal md:py-10 py-4 px-6 md:w-[400px] mx-auto space-y-4 rounded-[16px]">
