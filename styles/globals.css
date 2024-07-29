@@ -124,6 +124,7 @@ input {
     position: relative;
     border: 0px solid transparent;
     border-radius: 16px;
+    background-color: rgba(29, 9, 65, 0.3);
 }
 
 .Outline-Card::after {
@@ -132,7 +133,7 @@ input {
     inset: 0;
     border-radius: 16px;
     padding: 1px;
-    background: radial-gradient(ellipse 100% 80% at center, rgba(29, 9, 65, 1) 2%, rgba(130, 89, 239, 0.7) 51%, rgba(255, 255, 255, 0.7) 100%), linear-gradient(10deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.1) 100%);
+    background: radial-gradient(ellipse 100% 80% at center, rgba(29, 9, 65, 1) 2%, rgba(130, 89, 239, 0.7) 51%, rgba(255, 255, 255, 0.7) 100%), linear-gradient(10deg, rgba(255, 255, 255, 1) 0%, rgba(130, 89, 239, 0.7) 51%, rgba(255, 255, 255, 0.1) 100%);
     -webkit-mask:
         linear-gradient(#fff 0 0) content-box,
         linear-gradient(#fff 0 0);
