@@ -17,11 +17,11 @@ export default function JoinPage() {
       <div className="flex flex-col items-center w-full h-[80vh] md:h-[70vh] overflow-y-auto px-8">
         {
           tab == 'join' ? (
-            <p className="text-[32px] md:text-[48px] text-gradient leading-10 pb-6">
+            <p className="text-[32px] md:text-[48px] text-gradient leading-snug md:leading-10 md:pb-6 pb-2">
               Click, Join and<br /> Get Assets
             </p>
           ) : (
-            <p className="text-[32px] md:text-[48px] text-gradient leading-10 pb-6">
+            <p className="text-[32px] md:text-[48px] text-gradient leading-snug md:leading-10 md:pb-6 pb-2">
               Click, Join and<br /> Review Jars
             </p>
           )

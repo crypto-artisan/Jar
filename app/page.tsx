@@ -22,7 +22,7 @@ export default function Home() {
   };
   return (
     <section className="flex flex-col h-full items-center justify-between pt-16 pb-32">
-      <div className="flex flex-col text-left w-full md:w-[500px] text-gradient">
+      <div className="flex flex-col text-left w-full md:w-[500px] text-gradient px-8 leading-snug">
         <h2 className="text-[32px]">Welcome to Jar</h2>
         <h1>Your Assets,</h1>
         <h1 className="text-right">Our Security.</h1>
