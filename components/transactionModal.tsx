@@ -46,7 +46,7 @@ const TransactionModal: React.FC<ITransactionModal> = ({ isOpen, modalPlacement,
                     <>
                         <ModalHeader className="flex flex-row items-center justify-between pt-12 border-0">
                             <h3>{transaction?.id}</h3>
-                            < button className="px-4 py-1 bg-theme rounded-xl" >
+                            < button className="px-4 py-1 bg-theme rounded-xl w-[120px]" >
                                 {transaction?.result}
                             </button >
                         </ModalHeader>
