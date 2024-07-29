@@ -83,7 +83,7 @@ const CreateModal: React.FC<ITransactionModal> = ({ isOpen, modalPlacement, onCl
                                                         input: "text-[12px] text-white",
                                                     }}
                                                     labelPlacement="outside"
-                                                    placeholder="0x4DfB2F6d16A8CB217b391ce2A731433d769Ef859"
+                                                    placeholder=""
                                                     type="input"
                                                 />
                                             </section>
@@ -95,7 +95,7 @@ const CreateModal: React.FC<ITransactionModal> = ({ isOpen, modalPlacement, onCl
                                                         input: "text-[12px] text-white",
                                                     }}
                                                     labelPlacement="outside"
-                                                    placeholder="@abc123"
+                                                    placeholder="@"
                                                     type="input"
                                                 />
                                             </section>
@@ -107,7 +107,7 @@ const CreateModal: React.FC<ITransactionModal> = ({ isOpen, modalPlacement, onCl
                                                         input: "text-[12px] text-white",
                                                     }}
                                                     labelPlacement="outside"
-                                                    placeholder="@abc123"
+                                                    placeholder="@"
                                                     type="input"
                                                 />
                                             </section>
@@ -119,7 +119,7 @@ const CreateModal: React.FC<ITransactionModal> = ({ isOpen, modalPlacement, onCl
                                                         input: "text-[12px] text-white",
                                                     }}
                                                     labelPlacement="outside"
-                                                    placeholder="900"
+                                                    placeholder=""
                                                     endContent={
                                                         <div className="flex flex-row items-center justify-center px-2 gap-1">
                                                             <Image src="/HDollar.svg" alt="hdollor" width={30} height={30} className="text-white pointer-events-none flex-shrink-0" />
@@ -199,7 +199,7 @@ const CreateModal: React.FC<ITransactionModal> = ({ isOpen, modalPlacement, onCl
                                                         input: "text-[12px] text-white",
                                                     }}
                                                     labelPlacement="outside"
-                                                    placeholder="0x4DfB2F6d16A8CB217b391ce2A731433d769Ef859"
+                                                    placeholder=""
                                                     type="input"
                                                 />
                                             </section>
@@ -211,7 +211,7 @@ const CreateModal: React.FC<ITransactionModal> = ({ isOpen, modalPlacement, onCl
                                                         input: "text-[12px] text-white",
                                                     }}
                                                     labelPlacement="outside"
-                                                    placeholder="@abc123"
+                                                    placeholder="@"
                                                     type="input"
                                                 />
                                             </section>
@@ -223,7 +223,7 @@ const CreateModal: React.FC<ITransactionModal> = ({ isOpen, modalPlacement, onCl
                                                         input: "text-[12px] text-white",
                                                     }}
                                                     labelPlacement="outside"
-                                                    placeholder="0x4DfB2F6d16A8CB217b391ce2A731433d769Ef859"
+                                                    placeholder=""
                                                     type="input"
                                                 />
                                             </section>
@@ -235,7 +235,7 @@ const CreateModal: React.FC<ITransactionModal> = ({ isOpen, modalPlacement, onCl
                                                         input: "text-[12px] text-white",
                                                     }}
                                                     labelPlacement="outside"
-                                                    placeholder="@abc123"
+                                                    placeholder="@"
                                                     type="input"
                                                 />
                                             </section>
