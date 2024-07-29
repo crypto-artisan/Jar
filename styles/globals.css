@@ -87,10 +87,51 @@ input {
     padding: 1px;
 }
 
+
+
+.customModal {
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.7) 100%), linear-gradient(45deg, #23094FE0 0%, #23094FE0 100%);
+    position: relative;
+    border: 0px solid transparent;
+    border-radius: 16px;
+}
+
+.customModal::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    padding: 2px;
+    background: #8259EF20;
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
 .Outline-Card {
     position: relative;
-    border: 1px solid transparent;
+    border: 0px solid transparent;
     border-radius: 16px;
+}
+
+.Outline-Card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    padding: 1px;
+    background: radial-gradient(circle, rgba(29, 9, 65, 1) 2%, rgba(130, 89, 239, 0.7) 51%, rgba(255, 255, 255, 0.7) 100%), linear-gradient(10deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.1) 100%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    background-size: 40% 100%;
 }
 
 .Outline-Card::before {
@@ -99,16 +140,18 @@ input {
     inset: 0;
     border-radius: 16px;
     padding: 1px;
-    background: radial-gradient(circle, rgba(29, 9, 65, 1) 2%, rgba(130, 89, 239, 0.7) 51%, rgba(255, 255, 255, 1) 100%), linear-gradient(10deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.1) 100%);
+    background: rgba(255, 255, 255, 0.9);
     -webkit-mask:
         linear-gradient(#fff 0 0) content-box,
         linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
     pointer-events: none;
-    background-position: 100%;
-    /* background-size: 40% 100%; */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
+
+
 
 .dash-animation {
     animation: grow 10s infinite alternate;

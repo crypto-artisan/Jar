@@ -35,7 +35,7 @@ const CreateModal: React.FC<ITransactionModal> = ({ isOpen, modalPlacement, onCl
             classNames={{
                 body: "p-4",
                 backdrop: "bg-[#292f46]/50 backdrop-opacity-40",
-                base: "Outline-Card bg-[#19172c] px-2 md:px-4",
+                base: "customModal px-2 md:px-4",
                 header: "border-none",
                 footer: "border-none",
                 closeButton: "hover:bg-white/5 active:bg-white/10",
