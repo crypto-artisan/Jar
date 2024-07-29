@@ -83,7 +83,7 @@ export default function JoinPage() {
       }
       {
         tab == 'sign' && (
-          <div className="w-full md:w-[400px] md:px-0 grid grid-cols-2 px-8 space-x-2">
+          <div className="w-full md:w-[400px] md:px-0 grid grid-cols-2 px-12 space-x-2">
             < button className="px-4 py-2 bg-theme rounded-[16px] text-[24px]" >
               Sign
             </button >
